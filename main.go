@@ -1,5 +1,5 @@
 package main
 
-import "github.com/st-10n/martian/cli"
+import "github.com/sisizanohito/martian/cli"
 
 func main() { cli.Execute() }
