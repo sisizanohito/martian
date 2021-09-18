@@ -8,7 +8,7 @@ import (
 	"strings"
 
 	"github.com/spf13/cobra"
-	"github.com/st-10n/martian/resource"
+	"github.com/st-l10n/martian/resource"
 )
 
 var mergeCmd = &cobra.Command{

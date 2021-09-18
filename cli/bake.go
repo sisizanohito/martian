@@ -9,7 +9,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/st-10n/martian/resource"
+	"github.com/st-l10n/martian/resource"
 
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
