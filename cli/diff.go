@@ -9,7 +9,7 @@ import (
 
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
-	"github.com/st-l10n/martian/resource"
+	"github.com/sisizanohito/martian/resource"
 )
 
 var diffCmd = &cobra.Command{
