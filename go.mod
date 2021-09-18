@@ -1,4 +1,4 @@
-module github.com/sisizanohito/martian
+module github.com/st-l10n/martian
 
 require (
 	github.com/BurntSushi/toml v0.3.1 // indirect
