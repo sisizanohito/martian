@@ -211,7 +211,7 @@ var notifyNewAssets = &cobra.Command{
 				df,
 			},
 		}
-		st, err := d.ChannelMessageSendComplex("495320457491251201", mes)
+		st, err := d.ChannelMessageSendComplex("888946186273325087", mes)
 		if err != nil {
 			return fmt.Errorf("failed to send message: %v", err)
 		}
@@ -245,7 +245,7 @@ var notifyErrCmd = &cobra.Command{
 		mes := &discord.MessageSend{
 			Embed: embed,
 		}
-		if _, err = sess.ChannelMessageSendComplex("495483352841977867", mes); err != nil {
+		if _, err = sess.ChannelMessageSendComplex("888946186273325087", mes); err != nil {
 			return fmt.Errorf("failed to send notification: %v", err)
 		}
 		return nil
