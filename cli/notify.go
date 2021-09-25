@@ -178,7 +178,7 @@ var notifyNewAssets = &cobra.Command{
 				fmt.Fprintln(description, "**Languages affected:**", strings.Join(affected, ", "))
 			}
 		}
-		fmt.Fprintf(description, "\nSee raw commit:\nhttps://github.com/st-l10n/resources/commit/%s", resRef.Hash().String()[:7])
+		fmt.Fprintf(description, "\nSee raw commit:\nhttps://github.com/sisizanohito/stationeers_resources/commit/%s", resRef.Hash().String()[:7])
 		descriptionStr := description.String()
 		if description.Len() > 2000 {
 			descriptionStr = descriptionStr[:2000] + "..."
