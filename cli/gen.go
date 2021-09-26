@@ -8,9 +8,9 @@ import (
 	"path/filepath"
 	"strings"
 
+	"github.com/sisizanohito/martian/resource"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
-	"github.com/sisizanohito/martian/resource"
 )
 
 var genCmd = &cobra.Command{
@@ -134,7 +134,7 @@ var genCmd = &cobra.Command{
 				// Language -> ""
 				for _, s := range strings.Split(t.Path, string(filepath.Separator)) {
 					if s != "Language" {
-						o.FilePrefix = s
+						o.FilePrefix = strings.ReplaceAll(s, " ", "_")
 					}
 				}
 				gotEntries, err := resource.Gen(o)

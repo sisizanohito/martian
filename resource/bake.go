@@ -90,6 +90,8 @@ func Bake(o Options) ([]byte, error) {
 				switch elemPart.Tag {
 				case "Key":
 					continue
+				case "DisplayFilter":
+					continue
 				case "Description":
 					fmt.Println("ignoring description for", engPath)
 					// TODO(ernado): Handle "Description" field

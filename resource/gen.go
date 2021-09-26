@@ -65,6 +65,8 @@ func Gen(o GenOptions) (Entries, error) {
 				switch elemPart.Tag {
 				case "Key":
 					continue
+				case "DisplayFilter":
+					continue
 				}
 				for _, s := range o.Simplified {
 					if s == part.Tag+"."+elemPart.Tag {
